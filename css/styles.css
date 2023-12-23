@@ -59,10 +59,6 @@ img {
   margin-right: 76px;
 }
 
-.logo-cointainer:hover {
-  text-decoration: underline;
-}
-
 .menu-cointainer {
   display: flex;
   gap: 40px;
@@ -73,8 +69,11 @@ img {
   padding: 24px 0;
 }
 
-.menu-cointainer-link:hover {
-  text-decoration: underline;
+.menu-cointainer-link::after {
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--OCEAN, #404bbf);
 }
 
 .address-cointainer {
@@ -83,14 +82,16 @@ img {
   font-style: normal;
 }
 
+
+
 .section-first-container {
   padding: 188px 0;
   margin: auto;
-  background-image: linear-gradient(
+    background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office1.jpg);
+    ),url(../images/people-office1.jpg);
+  
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -631,9 +632,7 @@ span {
 
 .close-btn:hover,
 .close-btn:focus {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
+  fill: var(--CORNFLOWER, #e7e9fc); rgba(46, 47, 66, 0.40));
 }
 
 .modal-btn-svg {
