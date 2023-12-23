@@ -82,16 +82,15 @@ img {
   font-style: normal;
 }
 
-
-
 .section-first-container {
   padding: 188px 0;
   margin: auto;
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
-    ),url(../images/people-office1.jpg);
-  
+    ),
+    url(../images/people-office1.jpg);
+
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -632,7 +631,9 @@ span {
 
 .close-btn:hover,
 .close-btn:focus {
-  fill: var(--CORNFLOWER, #e7e9fc); rgba(46, 47, 66, 0.40));
+  background-color: var(--sixth-color);
+  border: none;
+  fill: var(--fourth-color);
 }
 
 .modal-btn-svg {
