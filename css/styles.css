@@ -631,7 +631,6 @@ span {
 
 .close-btn:hover,
 .close-btn:focus {
-  background-color: var(--sixth-color);
   border: none;
   fill: var(--fourth-color);
 }
